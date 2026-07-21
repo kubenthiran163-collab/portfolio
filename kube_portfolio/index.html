@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubenthiran K | AI & Machine Learning Engineer</title>
+    <meta name="description" content="Portfolio of Kubenthiran K, AI & Machine Learning Engineer, Full Stack Developer.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="loading">
+    <!-- Spotlight & Cursor -->
+    <div class="spotlight"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="ai-loader">
+            <div class="brain-icon"><i class='bx bx-brain'></i></div>
+            <div class="loading-ring"></div>
+            <div class="loading-text">INITIALIZING KUBENTHIRAN.AI...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header glass-nav" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo magnetic">Kuben<span class="gradient-text">thiran</span>.</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link magnetic">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link magnetic">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link magnetic">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link magnetic">Projects</a></li>
+                    <li class="nav__item"><a href="#journey" class="nav__link magnetic">Journey</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link magnetic">Contact</a></li>
+                </ul>
+                <div class="nav__close magnetic" id="nav-close"><i class='bx bx-x'></i></div>
+            </div>
+            
+            <div class="nav__actions">
+                <a href="#resume" class="btn btn--small btn--primary magnetic hide-mobile">Resume</a>
+                <div class="nav__toggle magnetic" id="nav-toggle"><i class='bx bx-menu-alt-right'></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div id="canvas-container"></div>
+            <div class="hero__glow-bg"></div>
+            
+            <div class="container hero__container">
+                <div class="hero__content gsap-reveal">
+                    <div class="hero__badge glass-panel magnetic">
+                        <span class="pulse-dot"></span> Available for Hire
+                    </div>
+                    
+                    <h1 class="hero__title">
+                        Hi, I'm <br>
+                        <span class="gradient-text">Kubenthiran K</span>
+                    </h1>
+                    
+                    <h3 class="hero__subtitle">AI & Machine Learning Engineer</h3>
+                    
+                    <div class="hero__typing">
+                        <span class="typed-text"></span><span class="cursor-type">&nbsp;</span>
+                    </div>
+                    
+                    <p class="hero__description">
+                        Motivated Artificial Intelligence and Machine Learning student passionate about building AI-powered applications, intelligent automation systems, and modern web applications.
+                    </p>
+                    
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary magnetic ripple-btn">View Projects</a>
+                        <a href="#resume" class="btn btn--outline magnetic ripple-btn">Download Resume</a>
+                        <a href="#contact" class="btn btn--ghost magnetic ripple-btn">Hire Me</a>
+                    </div>
+                    
+                    <div class="hero__socials">
+                        <a href="https://github.com/kubenthiran163-collab" target="_blank" class="social__icon magnetic"><i class='bx bxl-github' ></i></a>
+                        <a href="https://linkedin.com/in/kubenthiran-k-a94328350" target="_blank" class="social__icon magnetic"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+                
+                <!-- Holographic AI Centerpiece -->
+                <div class="hero__visuals gsap-reveal hide-mobile">
+                    <div class="hologram-wrapper" data-tilt data-tilt-max="10" data-tilt-perspective="1000">
+                        <!-- AI Brain Representation -->
+                        <div class="ai-orb"></div>
+                        <div class="holo-ring holo-ring-1"></div>
+                        <div class="holo-ring holo-ring-2"></div>
+                        
+                        <div class="floating-icons">
+                            <div class="holo-icon icon-1"><i class='bx bx-brain'></i></div>
+                            <div class="holo-icon icon-2"><i class='bx bx-code-alt'></i></div>
+                            <div class="holo-icon icon-3"><i class='bx bx-data'></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header gsap-fade-up">
+                    <h2 class="section__title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section__subtitle">Solving real-world problems using Artificial Intelligence and scalable software solutions.</p>
+                </div>
+                
+                <div class="about__grid">
+                    <div class="about__profile glass-panel gsap-fade-up" data-tilt data-tilt-max="3">
+                        <div class="profile__header">
+                            <div class="profile__avatar pulse-glow"><i class='bx bx-user'></i></div>
+                            <div>
+                                <h3 class="profile__name">Kubenthiran K</h3>
+                                <p class="profile__role gradient-text">AI & ML Engineer</p>
+                            </div>
+                        </div>
+                        <p class="profile__bio">
+                            I am a B.Tech Artificial Intelligence and Machine Learning student at IFET College of Engineering with a <strong>CGPA of 8.66</strong>.
+                        </p>
+                        <p class="profile__bio">
+                            I have practical experience in Python, Java, SQL, Artificial Intelligence, Machine Learning, Web Development, and Embedded Systems. I recently completed a Web Development Internship and hold multiple industry-recognized certifications from Microsoft, Infosys, HCL, AICTE, LinkedIn Learning, and Udemy.
+                        </p>
+                    </div>
+                    
+                    <div class="about__stats">
+                        <div class="stat__card glass-panel gsap-fade-up magnetic">
+                            <div class="stat__icon"><i class='bx bxs-graduation'></i></div>
+                            <h2 class="stat__number">8.66</h2>
+                            <p class="stat__text">CGPA</p>
+                        </div>
+                        <div class="stat__card glass-panel gsap-fade-up magnetic" style="transition-delay: 0.1s;">
+                            <div class="stat__icon"><i class='bx bx-layer'></i></div>
+                            <h2 class="stat__number"><span class="counter" data-target="3">0</span>+</h2>
+                            <p class="stat__text">Projects Built</p>
+                        </div>
+                        <div class="stat__card glass-panel gsap-fade-up magnetic" style="transition-delay: 0.2s;">
+                            <div class="stat__icon"><i class='bx bx-award'></i></div>
+                            <h2 class="stat__number"><span class="counter" data-target="9">0</span>+</h2>
+                            <p class="stat__text">Certifications</p>
+                        </div>
+                        <div class="stat__card glass-panel gsap-fade-up magnetic" style="transition-delay: 0.3s;">
+                            <div class="stat__icon"><i class='bx bx-briefcase'></i></div>
+                            <h2 class="stat__number">1</h2>
+                            <p class="stat__text">Internship</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack & Skills -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header gsap-fade-up">
+                    <h2 class="section__title">Technical <span class="gradient-text">Skills</span></h2>
+                </div>
+                
+                <div class="tech__grid">
+                    <!-- Programming -->
+                    <div class="tech__category glass-panel gsap-fade-up animated-border" data-tilt data-tilt-max="5">
+                        <h3 class="category__title"><i class='bx bx-code-curly'></i> Programming</h3>
+                        <div class="tech__items">
+                            <div class="tech__item magnetic"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                            <div class="tech__item magnetic"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                            <div class="tech__item magnetic"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Web -->
+                    <div class="tech__category glass-panel gsap-fade-up animated-border" data-tilt data-tilt-max="5">
+                        <h3 class="category__title"><i class='bx bx-globe'></i> Web</h3>
+                        <div class="tech__items">
+                            <div class="tech__item magnetic"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                            <div class="tech__item magnetic"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                            <div class="tech__item magnetic"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="tech__category glass-panel gsap-fade-up animated-border" data-tilt data-tilt-max="5">
+                        <h3 class="category__title"><i class='bx bx-data'></i> Database</h3>
+                        <div class="tech__items">
+                            <div class="tech__item magnetic"><i class='bx bx-server'></i><span>SQL</span></div>
+                            <div class="tech__item magnetic"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                        </div>
+                    </div>
+
+                    <!-- AI -->
+                    <div class="tech__category glass-panel gsap-fade-up animated-border" data-tilt data-tilt-max="5">
+                        <h3 class="category__title"><i class='bx bx-brain'></i> AI</h3>
+                        <div class="tech__items">
+                            <div class="tech__item magnetic"><i class='bx bx-chip'></i><span>AI</span></div>
+                            <div class="tech__item magnetic"><i class='bx bx-network-chart'></i><span>Machine Learning</span></div>
+                            <div class="tech__item magnetic"><i class='bx bx-bot'></i><span>Generative AI</span></div>
+                            <div class="tech__item magnetic"><i class='bx bx-message-square-dots'></i><span>Prompt Engineering</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Core Subjects -->
+                    <div class="tech__category glass-panel gsap-fade-up animated-border" data-tilt data-tilt-max="5">
+                        <h3 class="category__title"><i class='bx bx-book'></i> Core Subjects</h3>
+                        <div class="tech__items">
+                            <div class="tech__item magnetic"><span>Data Structures</span></div>
+                            <div class="tech__item magnetic"><span>Algorithms</span></div>
+                            <div class="tech__item magnetic"><span>DBMS</span></div>
+                            <div class="tech__item magnetic"><span>OS</span></div>
+                            <div class="tech__item magnetic"><span>Networks</span></div>
+                            <div class="tech__item magnetic"><span>OOP</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="tech__category glass-panel gsap-fade-up animated-border" data-tilt data-tilt-max="5">
+                        <h3 class="category__title"><i class='bx bx-wrench'></i> Tools</h3>
+                        <div class="tech__items">
+                            <div class="tech__item magnetic"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                            <div class="tech__item magnetic"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+                            <div class="tech__item magnetic"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header gsap-fade-up">
+                    <h2 class="section__title">Premium <span class="gradient-text">Showcases</span></h2>
+                </div>
+                
+                <div class="showcase__wrapper">
+                    <!-- Project 1 -->
+                    <div class="showcase__card glass-panel gsap-fade-up">
+                        <div class="showcase__visual" data-tilt data-tilt-max="5">
+                            <div class="project__placeholder ai-bg">
+                                <i class='bx bx-pulse'></i>
+                                <span>Health IoT</span>
+                            </div>
+                        </div>
+                        <div class="showcase__details">
+                            <div class="project__badges">
+                                <span class="badge">Python</span>
+                                <span class="badge">IoT</span>
+                                <span class="badge">Machine Learning</span>
+                            </div>
+                            <h3 class="showcase__title">AI Health Monitoring System</h3>
+                            
+                            <ul class="project__feature-list">
+                                <li><i class='bx bx-check-circle'></i> Real-time health monitoring</li>
+                                <li><i class='bx bx-check-circle'></i> IoT sensor integration</li>
+                                <li><i class='bx bx-check-circle'></i> Intelligent health analysis</li>
+                                <li><i class='bx bx-check-circle'></i> Machine Learning predictions</li>
+                            </ul>
+                            
+                            <div class="showcase__actions">
+                                <a href="#" class="btn btn--small btn--primary magnetic ripple-btn"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="showcase__card glass-panel gsap-fade-up reverse-layout">
+                        <div class="showcase__visual" data-tilt data-tilt-max="5">
+                            <div class="project__placeholder hardware-bg">
+                                <i class='bx bx-car'></i>
+                                <span>Smart Vehicle</span>
+                            </div>
+                        </div>
+                        <div class="showcase__details">
+                            <div class="project__badges">
+                                <span class="badge">Arduino</span>
+                                <span class="badge">MQ-3 Sensor</span>
+                                <span class="badge">Embedded Systems</span>
+                            </div>
+                            <h3 class="showcase__title">AI Alcohol Detection & Vehicle Control</h3>
+                            
+                            <ul class="project__feature-list">
+                                <li><i class='bx bx-check-circle'></i> Alcohol detection</li>
+                                <li><i class='bx bx-check-circle'></i> Vehicle control</li>
+                                <li><i class='bx bx-check-circle'></i> Safety automation</li>
+                                <li><i class='bx bx-check-circle'></i> Smart alert system</li>
+                            </ul>
+                            
+                            <div class="showcase__actions">
+                                <a href="#" class="btn btn--small btn--primary magnetic ripple-btn"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="showcase__card glass-panel gsap-fade-up">
+                        <div class="showcase__visual" data-tilt data-tilt-max="5">
+                            <div class="project__placeholder web-bg">
+                                <i class='bx bx-window-alt'></i>
+                                <span>Portfolio</span>
+                            </div>
+                        </div>
+                        <div class="showcase__details">
+                            <div class="project__badges">
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS</span>
+                                <span class="badge">JavaScript</span>
+                            </div>
+                            <h3 class="showcase__title">Personal Portfolio Website</h3>
+                            
+                            <ul class="project__feature-list">
+                                <li><i class='bx bx-check-circle'></i> Responsive Design</li>
+                                <li><i class='bx bx-check-circle'></i> Modern UI</li>
+                                <li><i class='bx bx-check-circle'></i> Glassmorphism</li>
+                                <li><i class='bx bx-check-circle'></i> Animated Sections</li>
+                            </ul>
+                            
+                            <div class="showcase__actions">
+                                <a href="#" class="btn btn--small btn--primary magnetic ripple-btn"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey & Certifications -->
+        <section class="experience section" id="journey">
+            <div class="container">
+                <div class="section__header gsap-fade-up">
+                    <h2 class="section__title">Professional <span class="gradient-text">Journey</span></h2>
+                </div>
+                
+                <div class="journey__grid">
+                    <!-- Timeline -->
+                    <div class="timeline__container gsap-fade-up">
+                        <h3 class="sub__title"><i class='bx bx-map-alt'></i> Education & Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline__item glass-panel">
+                                <div class="timeline__dot glow-dot"></div>
+                                <h4 class="timeline__title">B.Tech Artificial Intelligence & ML</h4>
+                                <span class="timeline__date">IFET College of Engineering (Autonomous)</span>
+                                <p class="timeline__desc">Maintaining an excellent academic record with a CGPA of 8.66.</p>
+                            </div>
+                            <div class="timeline__item glass-panel">
+                                <div class="timeline__dot glow-dot"></div>
+                                <h4 class="timeline__title">Web Development Intern</h4>
+                                <span class="timeline__date">RKS Infotech Pvt. Ltd., Puducherry</span>
+                                <ul class="timeline__list">
+                                    <li>Developed responsive web pages using HTML, CSS and JavaScript.</li>
+                                    <li>Built responsive user interfaces & improved website responsiveness.</li>
+                                    <li>Debugged frontend applications.</li>
+                                    <li>Worked with mentors using software development best practices.</li>
+                                </ul>
+                            </div>
+                            <div class="timeline__item glass-panel">
+                                <div class="timeline__dot glow-dot"></div>
+                                <h4 class="timeline__title">Achievements</h4>
+                                <span class="timeline__date">Ongoing</span>
+                                <ul class="timeline__list">
+                                    <li>Built AI, Embedded Systems and Web Development projects.</li>
+                                    <li>Active campus placement preparation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certs & Resume -->
+                    <div class="stats__resume__container">
+                        <!-- Premium Resume Card -->
+                        <div class="resume__premium glass-panel gsap-fade-up animated-border" data-tilt>
+                            <i class='bx bxs-file-pdf resume__icon pulse-glow'></i>
+                            <h3 class="resume__title">Curriculum Vitae</h3>
+                            <a href="#" class="btn btn--primary btn--full magnetic ripple-btn">
+                                Download Resume <i class='bx bx-download'></i>
+                            </a>
+                        </div>
+                        
+                        <!-- Certifications -->
+                        <div class="certifications__box glass-panel gsap-fade-up">
+                            <h3 class="sub__title"><i class='bx bx-award'></i> Certifications</h3>
+                            <ul class="cert__list">
+                                <li><i class='bx bx-check'></i> Python for AI and Machine Learning – Udemy</li>
+                                <li><i class='bx bx-check'></i> Python OOP – Udemy</li>
+                                <li><i class='bx bx-check'></i> Prompt Engineering – Infosys Springboard</li>
+                                <li><i class='bx bx-check'></i> Intro to AI – Infosys Springboard</li>
+                                <li><i class='bx bx-check'></i> Artificial Intelligence for All – Infosys Springboard</li>
+                                <li><i class='bx bx-check'></i> Intro to Generative AI – Microsoft Learn</li>
+                                <li><i class='bx bx-check'></i> What Is Generative AI – LinkedIn Learning</li>
+                                <li><i class='bx bx-check'></i> SOAR AI to be Aware – HCL Technologies</li>
+                                <li><i class='bx bx-check'></i> Intellectual Property UTSAV – AICTE</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- GitHub Metrics -->
+                        <div class="github__stats glass-panel gsap-fade-up">
+                            <h3 class="sub__title"><i class='bx bxl-github'></i> GitHub Activity</h3>
+                            <div class="github__images">
+                                <img src="https://github-readme-stats.vercel.app/api?username=kubenthiran163-collab&show_icons=true&theme=radical&hide_border=true&bg_color=00000000" alt="GitHub Stats" class="git-stat-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header gsap-fade-up">
+                    <h2 class="section__title">Initiate <span class="gradient-text">Connection</span></h2>
+                </div>
+                
+                <div class="contact__grid">
+                    <div class="contact__info gsap-fade-up">
+                        <div class="contact__card glass-panel magnetic" data-tilt>
+                            <i class='bx bx-envelope contact__icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <p class="contact__card-data">kubenthiran163@gmail.com</p>
+                        </div>
+                        <div class="contact__card glass-panel magnetic" data-tilt>
+                            <i class='bx bx-phone contact__icon'></i>
+                            <h3 class="contact__card-title">Phone</h3>
+                            <p class="contact__card-data">+91 9344851271</p>
+                        </div>
+                        <div class="contact__card glass-panel magnetic" data-tilt>
+                            <i class='bx bx-map-pin contact__icon'></i>
+                            <h3 class="contact__card-title">Location</h3>
+                            <p class="contact__card-data">Villupuram, Tamil Nadu</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-wrapper glass-panel gsap-fade-up animated-border">
+                        <form action="" class="contact__form">
+                            <h3 class="form__title">Send a Message</h3>
+                            <div class="input-group">
+                                <input type="text" required class="contact__form-input">
+                                <label class="floating-label">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" required class="contact__form-input">
+                                <label class="floating-label">Your Email</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea required cols="30" rows="6" class="contact__form-input"></textarea>
+                                <label class="floating-label">Message</label>
+                            </div>
+                            <button class="btn btn--primary btn--full magnetic ripple-btn" type="submit">
+                                Transmit Data <i class='bx bx-send'></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container glass-panel">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Kuben<span class="gradient-text">thiran</span>.</a>
+                <p class="footer__desc">Building AI-powered applications & intelligent automation systems.</p>
+            </div>
+            
+            <div class="footer__links-group">
+                <div class="footer__socials">
+                    <a href="https://linkedin.com/in/kubenthiran-k-a94328350" target="_blank" class="footer__social magnetic"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/kubenthiran163-collab" target="_blank" class="footer__social magnetic"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <span class="footer__copy">&#169; 2026 Kubenthiran K. All rights reserved.</span>
+            <div style="color:var(--text-color-light); font-size: 0.8rem;">Languages: Tamil, English</div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-wrapper">
+        <button class="chatbot-toggle magnetic ripple-btn" id="chatbot-toggle">
+            <i class='bx bx-bot pulse-glow'></i>
+        </button>
+        
+        <div class="chatbot-window glass-panel" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-title">
+                    <i class='bx bx-brain text-gradient'></i> Kube-AI Assistant
+                </div>
+                <button class="chatbot-close" id="chatbot-close"><i class='bx bx-x'></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="bot-msg">System initialized. I am Kubenthiran's AI assistant. How may I assist your inquiry today?</div>
+            </div>
+            <div class="chatbot-chips">
+                <button class="chip">What is your CGPA?</button>
+                <button class="chip">View Projects</button>
+                <button class="chip">Contact Info</button>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Message AI..." autocomplete="off">
+                <button id="chatbot-send" class="ripple-btn"><i class='bx bx-up-arrow-alt'></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
